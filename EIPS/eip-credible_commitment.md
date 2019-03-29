@@ -33,7 +33,7 @@ Beginning with block ISTANBUL_BLOCK_HEIGHT, DEVFUND_BLOCK_REWARD wei is added to
 
 ## Rationale
 
-We believe that the technical design of this EIP is straightforward.
+We believe that the technical design of this EIP is straightforward. The social rationale is explained in [this article](https://medium.com/gitcoin/funding-open-source-in-the-blockchain-era-8ded753bf05f).
 
 ## Backwards Compatibility
 
