@@ -13,7 +13,7 @@ created: 2019-03-13
 
 ## Simple Summary
 
-Ethereum currently provides a block reward to proof of work miners every block, but it does not capture any inflationary reward for ecosystem funding. This EIP adds a simple mechanism for capturing a portion of block rewards for ecosystem funding as a credible commitment to doing so in future, but it does not actually capture any such rewards.
+Ethereum currently provides a block reward to proof of work miners every block, but it does not capture any block rewards for ecosystem funding. This EIP adds a simple mechanism for capturing a portion of block rewards for ecosystem funding as a credible commitment to doing so in future, but it does not actually capture any such rewards.
 
 ## Abstract
 
@@ -29,7 +29,7 @@ We recognize that, while technically trivial, the real challenge in inflation-ba
 
 Two new constants are introduced: BENEFICIARY_ADDRESS, an Address, and DEVFUND_BLOCK_REWARD, an amount denominated in wei. Both are set to zero.
 
-Beginning with block ISTANBUL_BLOCK_HEIGHT, a coinbase transaction is added to each block minting DEVFUND_BLOCK_REWARD wei and adding it to the balance of BENEFICIARY_ADDRESS.
+Beginning with block ISTANBUL_BLOCK_HEIGHT, DEVFUND_BLOCK_REWARD wei is added to the balance of BENEFICIARY_ADDRESS at each block.
 
 ## Rationale
 
@@ -46,10 +46,6 @@ This EIP makes no changes to existing state transitions. Existing consensus test
 ## Implementation
 
 Reference implementations are included for the Trinity, go-ethereum, and parity clients.
-
-## References
-
-None yet
 
 ## Copyright
 Copyright and related rights waived via [CC0](https://creativecommons.org/publicdomain/zero/1.0/).
