@@ -31,6 +31,8 @@ Two new constants are introduced: BENEFICIARY_ADDRESS, an Address, and DEVFUND_B
 
 Beginning with block ISTANBUL_BLOCK_HEIGHT, DEVFUND_BLOCK_REWARD wei is added to the balance of BENEFICIARY_ADDRESS at each block.
 
+We may optionally add another constant, DECAY_FACTOR, which specifies a linear or exponenential decay factor that reduces the reward at every block > ISTANBUL_BLOCK_HEIGHT until it decays to zero. For simplicity, it has been excluded from this proposal.
+
 ## Rationale
 
 We believe that the technical design of this EIP is straightforward. The social rationale is explained in [this article](https://medium.com/gitcoin/funding-open-source-in-the-blockchain-era-8ded753bf05f).
