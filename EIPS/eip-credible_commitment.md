@@ -2,7 +2,6 @@
 eip: to-be-assigned
 title: Commitment to Sustainable Ecosystem Funding
 author: Gregory Markou <greg@chainsafe.io>, Kevin Owocki <kevin@gitcoin.co>, Lane Rettig <lane@ethereum.org>
-discussions-to: https://t.me/joinchat/DwEd_xahL5hHvzNYH2RnQA
 status: Draft
 type: Standards Track
 category: Core
